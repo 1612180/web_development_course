@@ -186,25 +186,26 @@ footer {
 
 /* Define your styles here */
 /* Round corner search input */
-#menu > form > div > input.my-round-border {
-    border-color: #ced4da transparent #ced4da #ced4da;
+#menu > form > div > input.form-control {
+    border-color: #D5D5D5 transparent #D5D5D5 #D5D5D5;
     border-radius: 100px 0px 0px 100px;
 }
 
 /* Clear background search button */
-#menu form > div > input.my-round-border::placeholder {
-    color: transparent;
+#menu form > div > input.form-control::placeholder {
+    color: #7C7C7C;
 }
 
 /* Round corner search input */
-#menu form > div > div > button.my-button-hiding{
-    color: #73c927;
+#menu form > div > div > button.btn {
+    color: #73C926;
     font-size: 18px;
     background: transparent;
-    border-color: #ced4da #ced4da #ced4da transparent;
+    border-color: #D5D5D5 #D5D5D5 #D5D5D5 transparent;
     border-radius: 0px 100px 100px 0px;}
 
-div#banner.my-cloud-background {
+/* Cloud background */
+div#banner:nth-child(2) {
     background-image:  url('../images/logo_bg.png'), url('../images/search_bg.png'), url('../images/bg_slider.gif');
     background-position: 10% top, 90% top, center bottom;
     background-repeat: no-repeat, no-repeat, repeat;
@@ -222,17 +223,16 @@ div#banner > div > div > a {
 }
 
 /* Text below drink coffee ... */
-body > div.my-menu-text > div > div > div {
-    text-transform: lowercase;
+body > div:nth-child(3) > div > div > div {
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 /* Read more */
-body > div.my-menu-text > div > div > a, 
+body > div:nth-child(3) > div > div > a, 
 body > div.about > div > div > div > div > div > a,
 body > div:nth-child(5) > div > div > div:nth-child(1) > a {
-    color: #2A9FD8;
+    color: #2FA0D5;
     font-size: 16px;
     font-weight: bold;
     text-decoration: underline
@@ -240,7 +240,7 @@ body > div:nth-child(5) > div > div > div:nth-child(1) > a {
 
 /* About us */
 body > div.about > div > div > div > h3 {
-    color: white;
+    color: #D5D5D5;
 }
 
 /* Text below about us */
@@ -258,7 +258,7 @@ body > div.about > div > div > div > div > img {
 /* Newsletter Sign Up */
 body > div.about > div > div > div > form > legend {
     text-align: center;
-    color: white;
+    color: #D5D5D5;
 }
 
 /* Please write email */
@@ -268,7 +268,7 @@ body > div.about > div > div > div > form > div > label[for=email] {
 
 /* Corner around Newsletter Sign Up */
 body > div.about > div > div > div:nth-child(2) {
-    border-color: #814e64;
+    border-color: #814E64;
     border-width: 3px;
     border-style: dashed;
     border-radius: 10px;
@@ -313,22 +313,22 @@ body > footer > div > nav > ul > li {
 }
 
 body > footer > div > nav > ul > li > a {
-    color: white;
+    color: #D5D5D5;
     font-weight: bold;
 }
 
 body > footer > div > nav > ul > li:first-child > a {
-    color: #fa97c2;
+    color: #FA97C2;
 }
 
 /* ICE-CREAM 2019 */
 body > footer > div > div {
     padding-top: 20px;
-    color: whitesmoke;
+    color: #7C7C7C;
     font-weight: bold;
 }
 
 body > footer > div > div > a {
-    color: whitesmoke;
+    color: #7C7C7C;
     font-weight: bold;
 }
