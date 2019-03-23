@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7C7C7C;
+}
+
+h2,
+h3,
+h4,
+legend,
+.title,
+.date {
+    color: #333333;
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-top: 110px;
+}
+
+h3 {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 25px 0;
+}
+
+h4 {
+    font-size: 26px;
+    padding: 0 0 10px 0;
+}
+
+
+/* top menu */
+
+#menu li a {
+    font-family: 'Changa One', cursive;
+    color: #333333;
+    padding: 0 3em 0 0;
+}
+
+#menu li a:hover,
+#menu li.active a {
+    background: none;
+    color: #2fa0d5;
+}
+
+
+/* social links */
+
+.social a {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0px;
+    height: 25px;
+    width: 27px;
+    cursor: pointer;
+}
+
+.social a.twitter {
+    background: url(../images/twitter.png) 0 0 no-repeat;
+}
+
+.social a.twitter:hover {
+    background: url(../images/twitter_active.png) 0 0 no-repeat;
+}
+
+.social a.facebook {
+    background: url(../images/facebook.png) 0 0 no-repeat;
+}
+
+.social a.facebook:hover {
+    background: url(../images/facebook_active.png) 0 0 no-repeat;
+}
+
+
+/* slider */
+
+#banner {
+    background: url(../images/bg_slider.gif) center bottom repeat;
+    text-align: center;
+    padding: 1em;
+}
+
+#btn-menu {
+    color: #fff;
+    background: #fa97c2;
+    border-radius: 14px;
+}
+
+#dots {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    height: 19px;
+    line-height: 19px;
+}
+
+#dots li {
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    margin: 0 2px 0 1px;
+    position: relative;
+    text-align: left;
+    text-indent: 9999px;
+    width: 19px;
+    border-radius: 19px;
+    background: #fff;
+}
+
+#dots li span {
+    border-radius: 9px;
+    height: 9px;
+    left: 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    width: 9px;
+}
+
+#dots li.current span,
+#dots li:hover span {
+    box-shadow: 0;
+    background: #73c926;
+}
+
+
+/* about */
+
+.about {
+    background: #fa97c2;
+    color: #814e64;
+    padding: 1em;
+    overflow: auto;
+}
+
+.about input {
+    width: 100%;
+    border-radius: 5px;
+    height: 38px;
+    border: none;
+    box-shadow: 0 0 0;
+}
+
+.about button {
+    font-size: 22px;
+    color: white;
+    background: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+
+/* news */
+
+.date {
+    background: #73c926;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    margin: 10px 15px 15px 0;
+    border-radius: 14px;
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+    background: url(../images/bg.gif) 0 center repeat;
+    color: #7c7c7c;
+}
+
+
+/* Define your styles here */
+/* Round corner search input */
+#menu > form > div > input.my-round-border {
+    border-color: #ced4da transparent #ced4da #ced4da;
+    border-radius: 100px 0px 0px 100px;
+}
+
+/* Clear background search button */
+#menu form > div > input.my-round-border::placeholder {
+    color: transparent;
+}
+
+/* Round corner search input */
+#menu form > div > div > button.my-button-hiding{
+    color: #73c927;
+    font-size: 18px;
+    background: transparent;
+    border-color: #ced4da #ced4da #ced4da transparent;
+    border-radius: 0px 100px 100px 0px;}
+
+div#banner.my-cloud-background {
+    background-image:  url('../images/logo_bg.png'), url('../images/search_bg.png'), url('../images/bg_slider.gif');
+    background-position: 10% top, 90% top, center bottom;
+    background-repeat: no-repeat, no-repeat, repeat;
+}
+div#banner > div > h2 {
+    font-weight: 500;
+}
+
+/* See out menu */
+div#banner > div > div > a {
+    text-transform: uppercase;
+    padding: 15px 60px 15px 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Text below drink coffee ... */
+body > div.my-menu-text > div > div > div {
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Read more */
+body > div.my-menu-text > div > div > a, 
+body > div.about > div > div > div > div > div > a,
+body > div:nth-child(5) > div > div > div:nth-child(1) > a {
+    color: #2A9FD8;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+/* About us */
+body > div.about > div > div > div > h3 {
+    color: white;
+}
+
+/* Text below about us */
+body > div.about > div > div > div > div > div {
+    font-weight: bold;
+    padding: 2px;
+}
+
+/* Image below about us */
+body > div.about > div > div > div > div > img {
+    float: left;
+    padding: 20px;
+}
+
+/* Newsletter Sign Up */
+body > div.about > div > div > div > form > legend {
+    text-align: center;
+    color: white;
+}
+
+/* Please write email */
+body > div.about > div > div > div > form > div > label[for=email] {
+    font-weight: bold;
+}
+
+/* Corner around Newsletter Sign Up */
+body > div.about > div > div > div:nth-child(2) {
+    border-color: #814e64;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Sign up button */
+body > div.about > div > div > div:nth-child(2) > form > button {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Date below News */
+body > div:nth-child(5) > div > div > div:nth-child(1) {
+    float: left;
+}
+
+/* Text below News */
+body > div:nth-child(5) > div > div > div:nth-child(2) > h4 {
+    padding-bottom: 0px;
+}
+
+body > div:nth-child(5) > div > div > div:nth-child(2) > div {
+    font-weight: bold;
+}
+
+/* Space top and bottom of News */
+body > div:nth-child(5) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* footer home about ... */
+body > footer > div > nav > ul > li {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body > footer > div > nav > ul > li > a {
+    color: white;
+    font-weight: bold;
+}
+
+body > footer > div > nav > ul > li:first-child > a {
+    color: #fa97c2;
+}
+
+/* ICE-CREAM 2019 */
+body > footer > div > div {
+    padding-top: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+body > footer > div > div > a {
+    color: whitesmoke;
+    font-weight: bold;
+}
