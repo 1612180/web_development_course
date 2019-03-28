@@ -229,7 +229,7 @@ body > div:nth-child(3) > div > div > div {
 }
 
 /* Read more */
-body > div:nth-child(3) > div > div > a, 
+body > div:nth-child(3) > div > div > a,
 body > div.about > div > div > div > div > div > a,
 body > div:nth-child(5) > div > div > div:nth-child(1) > a {
     color: #2FA0D5;
@@ -315,6 +315,10 @@ body > footer > div > nav > ul > li {
 body > footer > div > nav > ul > li > a {
     color: #D5D5D5;
     font-weight: bold;
+}
+
+body > footer > div > nav > ul > li > a:hover {
+    color: #FA97C2;
 }
 
 body > footer > div > nav > ul > li:first-child > a {
