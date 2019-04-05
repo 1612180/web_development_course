@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Bình chọn diễn viên yêu thích</h1>
+    <ul>
+        <li>
+            <button>
+                <img src="img/darryl.jpg" width="80px;">
+            </button>
+            <p>Lượt bình chọn: <span>0</span></p>
+        </li>
+        <li>
+            <button>
+                <img src="img/dwight.jpeg" width="80px;">
+            </button>
+            <p>Lượt bình chọn: <span>0</span></p>
+        </li>
+        <li>
+            <button>
+                <img src="img/jim.jpg" width="80px;">
+            </button>
+            <p>Lượt bình chọn: <span>0</span></p>
+        </li>
+        <li>
+            <button>
+                <img src="img/nard_dog.jpg" width="80px;">
+            </button>
+            <p>Lượt bình chọn: <span>0</span></p>
+        </li>
+
+        <li>
+            <button>
+                <img src="img/prison mike.jpg" width="80px;">
+            </button>
+            <p>Lượt bình chọn: <span>0</span></p>
+        </li>
+    </ul>
+    <script>
+        function sortListByVote(list) {
+            for (let i = 0; i < list.length; i += 1) {
+                for (let j = i + 1; j < list.length; j += 1) {
+                    i_span = list[i].getElementsByTagName("span")[0]
+                    j_span = list[j].getElementsByTagName("span")[0]
+                    i_vote = parseInt(i_span.innerText);
+                    j_vote = parseInt(j_span.innerText);
+                    if (i_vote < j_vote) {
+                        // swap image
+                        i_img = list[i].getElementsByTagName("img")[0]
+                        j_img = list[j].getElementsByTagName("img")[0]
+                        let temp = i_img.src;
+                        i_img.src = j_img.src;
+                        j_img.src = temp
+                        // swap vote
+                        temp = i_span.innerText;
+                        i_span.innerText = j_span.innerText;
+                        j_span.innerText = temp;
+                    }
+                }
+            }
+        }
+        listActor = document.getElementsByTagName("li")
+        for(let i = 0; i < listActor.length; i += 1){
+            btn = listActor[i].getElementsByTagName("button")[0]
+            console.log(btn)
+            btn.onclick = function(){
+                // tang luot binh chon (vote)
+                vote = listActor[i].getElementsByTagName("span")[0]
+                vote.innerText = parseInt(vote.innerText) + 1
+                // sap xep lai
+                sortListByVote(listActor)
+            }
+        }
+    </script>
+</body>
+
+</html>
